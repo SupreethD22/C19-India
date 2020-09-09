@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <title>Document</title>
+   
+</head>
+<body id="body">
+
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-sm fixed-top navbar-dark navcolor" id="navbr">
+    <!-- branding -->
+    <div class="container">
+        <img src="/images/C-19 IndiaDashboard.png" alt="" style="width: 130px;height: 60px;padding: 5px;">
+       
+        <!-- collapse-btn -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#collapsibleNavbar'>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- navbar-links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+            <ul class="navbar-nav ml-auto link">
+              <!-- <button  onclick="myfun()">click</button> -->
+               
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">States</a>
+                    <div class="dropdown-menu">
+                        <a href="AndamanAndNicobarIslands.html" class="dropdown-item">AndamanAndNicobarIslands</a>
+                        <a href="AndhraPradesh.html" class="dropdown-item">AndhraPradesh</a>
+                        <a href="ArunachalPradesh.html" class="dropdown-item">ArunachalPradesh</a>
+                        <a href="Assam.html"class="dropdown-item">Assam</a>
+                        <a href="Bihar.html" class="dropdown-item">Bihar</a>
+                        <a href="Chandigarh.html" class="dropdown-item">Chandigarh</a>
+                        <a href="Chhattisgarh.html" class="dropdown-item">Chhattisgarh</a>
+                        <a href="DadraAndNagarHaveli.html" class="dropdown-item">DadraAndNagarHaveli</a>
+                        <a href="DamanAndDiu.html" class="dropdown-item">DamanAndDiu</a>
+                        <a href="Delhi.html" class="dropdown-item">Delhi</a>
+                        <a href="Goa.html" class="dropdown-item">Goa</a>
+                        <a href="Gujarat.html" class="dropdown-item">Gujarat</a>
+                        <a href="Haryana.html" class="dropdown-item">Haryana</a>
+                        <a href="HimachalPradesh.html" class="dropdown-item">HimachalPradesh</a>
+                        <a href="JammuAndKashmir.html" class="dropdown-item">JammuAndKashmir</a>
+                        <a href="Jharkhand.html" class="dropdown-item">Jharkhand</a>
+                        <a href="Karnataka.html" class="dropdown-item">Karnataka</a>
+                        <a href="Kerala.html" class="dropdown-item">Kerala</a>
+                        <a href="Ladakh.html" class="dropdown-item">Ladakh</a>
+                        <a href="Lakshadweep.html" class="dropdown-item">Lakshadweep</a>
+                        <a href="MadhyaPradesh.html" class="dropdown-item">MadhyaPradesh</a>
+                        <a href="Maharashtra.html" class="dropdown-item">Maharashtra</a>
+                        <a href="Manipur.html" class="dropdown-item">Manipur</a>
+                        <a href="Meghalaya.html" class="dropdown-item">Meghalaya</a>
+                        <a href="Mizoram.html" class="dropdown-item">Mizoram</a>
+                        <a href="Nagaland.html" class="dropdown-item">Nagaland</a>
+                        <a href="Odisha.html" class="dropdown-item">Odisha</a>
+                        <a href="Punjab.html" class="dropdown-item">Punjab</a>
+                        <a href="puducherry.html" class="dropdown-item">Puducherry</a>
+                        <a href="Rajasthan.html" class="dropdown-item">Rajasthan</a>
+                        <a href="Sikkim.html" class="dropdown-item">Sikkim</a>
+                        <a href="TamilNadu.html" class="dropdown-item">TamilNadu</a>
+                        <a href="Telangana.html" class="dropdown-item">Telangana</a>
+                        <a href="Tripura.html" class="dropdown-item">Tripura</a>
+                        <a href="UttaraKhand.html" class="dropdown-item">UttaraKhand</a>
+                        <a href="UttarPradesh.html" class="dropdown-item">UttarPradesh</a>
+                        <a href="WestBengal.html" class="dropdown-item">WestBengal</a>
+
+
+
+
+
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    
+    <div class="container" style="margin-top: 80px; height: 50vh;">
+    <h1 id="la"></h1>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="container-fluid">
+                <div class="container-fluid">
+
+                    
+                    <div class="row">
+                   
+                    <div class="col" id="worldconfirmed" style="width:20px;background-color: brown;color: cornsilk;text-align: center;align-items: center;">
+                        <a id="active">Active</a><br>
+                        <a id="laactive" class="act"></a><br>
+                        <i></i><a id="tdyactive"></a>
+                    </div>
+                    <div class="col" id="worldconfirmed" style="background-color: brown;color: cornsilk;text-align: center;">
+                        <a id="active">Confirmed</a><br>
+                        <a id="laconf" class="act"></a><br>
+                        <i>+</i><a id="laconfrm"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" id="worldconfirmed" style="background-color: brown;color: cornsilk;text-align: center;">
+                        <a id="active">Recovered</a><br>
+                        <a id="larec" class="act"></a><br>
+                        <i>+</i><a id="larecv"></a>
+                    </div>
+                    <div class="col" id="worldconfirmed" style="background-color: brown;color: cornsilk;text-align: center;">
+                        <a id="active">Deaths</a><br>
+                        <a id="ladeaths" class="act"></a><br>
+                        <i>+</i><a id="lad"></a>
+                    </div>
+                </div>     
+                <!-- <div class="row">
+                    <img src="/images/Andhra_Pradesh_outline.svg.png" alt="" style="width: 510px; height: 500px; background-color: rgb(134, 134, 134);">
+                </div>  -->
+                
+                </div>
+            </div>
+        </div>
+   
+       
+    <div class="row">
+        <div class="col-lg-6">
+
+    
+        <div id="tablescroll">
+
+        
+    
+        <table class="table table-bordered table-dark "  border='1'>
+            <thead>
+                <tr>
+                    <th >District</th>
+                    <th>Active</th>
+                    <th>Confirmed</th>
+                    <th>Recovered</th>
+                    <th>Deaths</th>
+                </tr>
+            </thead>
+            <tbody id="ap1">
+    
+            </tbody>
+        </table>
+    </div>
+  
+   
+
+    
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+    <script src="/jquery/jquery-3.5.1.js"></script>
+    <script src="/popper/popper.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        const xml5 = new XMLHttpRequest();
+
+        xml5.open('GET','https://api.covid19india.org/v2/state_district_wise.json',true);
+
+        xml5.onload = function()
+        {
+            if(this.status === 200)
+            {
+                var eachdist  =  JSON.parse(this.responseText)
+                var ap = '';
+                console.log(eachdist);
+                for(i=0;i<=eachdist.length;i++)
+                {
+                   
+                    ap += "<tr>";
+                    ap += "<td >" +eachdist[18].districtData[i].district + "</td>";  
+                    ap += "<td  style='color:rgb(243, 213, 42)'>" +eachdist[18].districtData[i].active+ "</td>";  
+                    ap += "<td>"
+                            + "<a style='color:rgb(255, 61, 61)'>"+eachdist[18].districtData[i].confirmed+"</a>" + "<br>"
+                            +"<i style='color: rgb(255, 61, 61)'>+</i>"+ "<a style='color:rgb(255, 61, 61)'>"+eachdist[18].districtData[i].delta.confirmed+"</a>" +
+                        "</td>";
+                    ap +="<td>"
+                            + "<a style='color:#50da43'>"+eachdist[18].districtData[i].recovered+"</a>" + "<br>"
+                            +"<i style='color: #50da43'>+</i>"+ "<a style='color:#50da43'>"+eachdist[18].districtData[i].delta.recovered+"</a>" +
+                        "</td>";
+                    ap += "<td>"
+                            + "<a style='color: rgb(168, 168, 168)'>"+eachdist[18].districtData[i].deceased+"</a>" + "<br>"
+                            +"<i style='color: rgb(168, 168, 168)'>+</i>"+ "<a style='color: rgb(168, 168, 168)'>"+eachdist[18].districtData[i].delta.deceased+"</a>" +
+                        "</td>";
+                    ap += "</tr>"
+
+                    document.getElementById('ap1').innerHTML = ap;
+                    // console.log(ap);
+                }
+            
+            }
+        }
+
+        xml5.send();
+    </script>
+    <script>
+        var api_url6 = 'https://api.covid19india.org/data.json';
+        var api_url7 = 'https://api.covid19india.org/states_daily.json';
+
+        async function getData6() {
+                var response6 = await fetch(api_url6);
+                var data = await response6.json();
+                // console.log(data);
+
+                var response7 = await fetch(api_url7);
+                var data2 = await response7.json();
+                // console.log(data2.states_daily);
+
+                
+                //getting the location
+
+                var last = (data2.states_daily.length) - 1;
+
+         //la
+
+	var laconfrm = data2.states_daily[last - 2].la;
+	var larec = data2.states_daily[last-1].la;
+	var lad = data2.states_daily[last].la;
+
+	document.getElementById('laconfrm').innerHTML = laconfrm;
+	document.getElementById('larecv').innerHTML = larec;
+	document.getElementById('lad').innerHTML = lad;
+    
+                   //30 LA
+
+          var la = data.statewise[30].state;
+          var laconf = data.statewise[30].confirmed
+          var laactive = data.statewise[30].active;
+          var larec = data.statewise[30].recovered;
+          var ladeaths = data.statewise[30].deaths;
+ 
+          document.getElementById('la').innerHTML =la;
+          document.getElementById('laconf').innerHTML = laconf
+          document.getElementById('laactive').innerHTML = laactive;
+          document.getElementById('larec').innerHTML = larec;
+          document.getElementById('ladeaths').innerHTML = ladeaths;
+
+        }
+
+        getData6();
+    </script>
+
+
+</body>
+
+</html>

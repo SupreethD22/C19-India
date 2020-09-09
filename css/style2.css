@@ -1,0 +1,623 @@
+body
+{
+    background: #2A2A2A;
+    overflow-x: hidden;
+}
+
+/* navbar color */
+body > nav
+{
+    background: #3F3F3F;
+    position: relative;
+    height: 80px;
+    width: auto;
+}
+
+body > section
+{
+    width: 100vh;
+    height: 750px;
+}
+
+
+
+body > section > div > div > h1
+{
+    width: 546px;
+    height: 186px;
+    left: 57px;
+    top: 110px;
+    padding: 10px;
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: #65AAD9;
+}
+
+body > section > div > div > p
+{
+    width: 597px;
+    height: 146px;
+    left: 57px;
+    top: 280px;
+    padding: 10px;
+    position: absolute;
+    font-size: 27px;
+    color: #95989A;
+}
+
+
+body > section > div > div > p:nth-child(3)
+{
+    width: 597px;
+    height: 146px;
+    left: 57px;
+    top: 405px;
+    padding: 10px;
+    position: absolute;
+    font-size: 27px;
+    color: #95989A;
+}
+
+
+/* img square grey dashboard */
+
+body > section > div > div:nth-child(2) > img
+{
+    width: 857px;
+    height: 670px;
+    margin-top: 90px;
+    margin-left: 260px;
+    position: absolute;
+}
+
+/* dashboard text */
+
+body > section > div > div:nth-child(2) > h1
+{
+    position: absolute;
+    font-size: 28px;
+    margin-left: 500px;
+    color: #3DB6CE;
+}
+
+
+body > section > div > div:nth-child(2) > h3
+{
+    position: absolute;
+    font-size: 22px;
+    margin-top: 205px;
+    margin-left: 350px;
+    color: #95989A;
+}
+
+/* img display info world */
+
+body > section > div > div:nth-child(2) > div > img
+{
+    width: 197px;
+    height: 150px;
+    margin-top: 216px;
+    margin-left: 320px;
+    position: absolute;
+}
+
+
+/* world confirmed */
+
+body > section > div > div:nth-child(2) > div > h2:nth-child(2)
+{
+    position: absolute;
+    font-size: 16px;
+    margin-top: 245px;
+    margin-left: 375px;
+    color: rgb(245, 90, 90);
+    -webkit-text-stroke: .1px rgb(5, 5, 5);
+
+}
+
+#confirmed
+{
+    position: absolute;
+    margin-top: 265px;
+    margin-left: 360px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px;
+    -webkit-text-stroke: .3px rgb(5, 5, 5);
+    color: rgb(255, 61, 61);
+}
+
+body > section > div > div:nth-child(2) > div:nth-child(4) > i
+{
+    position: absolute;
+    margin-top: 305px;
+    margin-left: 370px;
+    font-size: 14px;
+    color: rgb(255, 61, 61);
+}
+
+#tdyconformed
+{
+    position: absolute;
+    margin-top: 302px;
+    margin-left: 390px;
+    font-size: 17px;
+    color: rgb(255, 61, 61);
+    -webkit-text-stroke: .2px rgb(5, 5, 5);
+}
+
+
+
+
+
+/*/////////////////////// img display info world active */
+
+body > section > div > div:nth-child(2) > div:nth-child(5) > img
+{
+    width: 197px;
+    height: 150px;
+    margin-top: 216px;
+    margin-left: 500px;
+    position: absolute;
+}
+
+/* world active */
+
+body > section > div > div:nth-child(2) > div:nth-child(5) > h2:nth-child(2)
+{
+    position: absolute;
+    font-size: 16px;
+    margin-top: 245px;
+    margin-left: 570px;
+    color: rgb(70, 230, 118);
+}
+
+#active
+{
+    position: absolute;
+    margin-top: 265px;
+    margin-left: 560px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+
+body > section > div > div:nth-child(2) > div:nth-child(5) > i
+{
+    position: absolute;
+    margin-top: 305px;
+    margin-left: 560px;
+    font-size: 14px;
+}
+
+#tdyactive
+{
+    position: absolute;
+    margin-top: 303px;
+    margin-left: 570px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+/*///////////////// img display info world deaths */
+
+body > section > div > div:nth-child(2) > div:nth-child(6) > img
+{
+    width: 197px;
+    height: 150px;
+    margin-top: 216px;
+    margin-left: 680px;
+    position: absolute;
+}
+
+/* world deaths */
+
+body > section > div > div:nth-child(2) > div:nth-child(6) > h2:nth-child(2)
+{
+    position: absolute;
+    font-size: 16px;
+    margin-top: 245px;
+    margin-left: 750px;
+    color: rgb(0, 0, 0);
+}
+
+
+#deaths
+{
+    position: absolute;
+    margin-top: 265px;
+    margin-left: 732px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px;
+    color: rgb(5, 5, 5);
+}
+
+body > section > div > div:nth-child(2) > div:nth-child(6) > i{
+    position: absolute;
+    margin-top: 307px;
+    margin-left: 742px;
+    font-size: 14px;
+}
+
+#tdydeaths
+{
+    position: absolute;
+    margin-top: 302px;
+    margin-left: 760px;
+    font-size: 17px;
+    color: rgb(5, 5, 5);
+}
+
+
+/* img display info world recovered */
+
+body > section > div > div:nth-child(2) > div:nth-child(7) > img
+{
+    width: 197px;
+    height: 150px;
+    margin-top: 216px;
+    margin-left: 860px;
+    position: absolute;
+}
+
+/* world recovered */
+
+body > section > div > div:nth-child(2) > div:nth-child(7) > h2:nth-child(2)
+{
+    position: absolute;
+    font-size: 16px;
+    margin-top: 245px;
+    margin-left: 920px;
+    color: rgb(23, 180, 241);
+}
+
+
+#recovered
+{
+    position: absolute;
+    margin-top: 265px;
+    margin-left: 898px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px;
+    color: rgb(23, 180, 241);
+}
+
+body > section > div > div:nth-child(2) > div:nth-child(7) > i{
+    position: absolute;
+    margin-top: 307px;
+    margin-left: 922px;
+    font-size: 14px;
+    color: rgb(30, 180, 218);
+}
+
+#tdyrecovered
+{
+    position: absolute;
+    margin-top: 302px;
+    margin-left: 940px;
+    font-size: 17px;
+    color: rgb(23, 180, 241);
+}
+
+
+
+
+/*////////////////////////////////////////////////////////////*/
+/*////////////////// INDIA  CASES ////////////////////////////*/
+/*////////////////////////////////////////////////////////////*/
+
+body > section > div:nth-child(2) > h3
+{
+    position: absolute;
+    font-size: 22px;
+    margin-top: 384px;
+    margin-left: 755px;
+    color: #95989A;
+}
+
+
+/* INDIA CONFIRMED */
+
+body > section > div:nth-child(2) > div > img
+{
+    width: 197px;
+    height: 150px;
+    margin-top: 395px;
+    margin-left: 725px;
+    position: absolute;
+}
+
+body > section > div:nth-child(2) > div:nth-child(2) > h2:nth-child(2)
+{
+    position: absolute;
+    font-size: 16px;
+    margin-top: 425px;
+    margin-left: 780px;
+    color: rgb(245, 90, 90)
+}
+
+#indconfirmed
+{
+    position: absolute;
+    margin-top: 335px;
+    margin-left: 700px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px;
+    color: rgb(255, 61, 61);
+}
+
+body > section > div:nth-child(2) > div > i
+{
+    position: absolute;
+    margin-top: 485px;
+    margin-left: 778px;
+    font-size: 14px;
+    color: rgb(245, 90, 90)
+}
+
+#indtdyconformed
+{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 798px;
+    font-size: 17px;
+    color: rgb(245, 90, 90)
+}
+
+
+
+/*India actived cases*/
+
+
+body > section > div:nth-child(2) > div:nth-child(3) > img
+{
+    width: 197px;
+    height: 150px;
+    margin-top: 395px;
+    margin-left: 905px;
+    position: absolute;
+}
+
+body > section > div:nth-child(2) > div:nth-child(3) > h2:nth-child(2)
+{
+    position: absolute;
+    font-size: 16px;
+    margin-top: 425px;
+    margin-left: 980px;
+    color: rgb(70, 230, 118);
+}
+
+#indactive
+{
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 895px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px;
+    color: rgb(70, 230, 118);
+}
+
+body > section > div:nth-child(2) > div:nth-child(3) > i
+{
+    position: absolute;
+    font-size: 14px;
+    margin-top: 490px;
+    margin-left: 965px;
+    color: rgb(70, 230, 118);
+}
+
+#indtdyactive
+{
+    position: absolute;
+    margin-top: 487px;
+    margin-left: 985px;
+    font-size: 16px;
+    color: rgb(70, 230, 118);
+}
+
+
+
+/* DEATHS INDIA*/
+
+body > section > div:nth-child(2) > div:nth-child(4) > img
+{
+    width: 197px;
+    height: 150px;
+    margin-top: 395px;
+    margin-left: 1087px;
+    position: absolute;
+}
+
+body > section > div:nth-child(2) > div:nth-child(4) > h2:nth-child(2)
+{
+    position: absolute;
+    font-size: 16px;
+    margin-top: 425px;
+    margin-left: 1155px;
+    color: rgb(5, 5, 5)
+}
+
+#inddeaths
+{
+    position: absolute;
+    font-size: 16px;
+    margin-top: 325px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 1065px;
+    color: rgb(5, 5, 5)
+}
+
+body > section > div:nth-child(2) > div:nth-child(4) > i
+{
+    position: absolute;
+    font-size: 14px;
+    margin-top: 485px;
+    margin-left: 1150px;
+    color: rgb(5, 5, 5) 
+}
+
+#indtdydeaths
+{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 1165px;
+    font-size: 17px;
+    color: rgb(5, 5, 5);
+}
+
+
+/* Recovered India */
+
+body > section > div:nth-child(2) > div:nth-child(5) > img
+{
+    width: 197px;
+    height: 150px;
+    margin-top: 395px;
+    margin-left: 1268px;
+    position: absolute;
+}
+
+body > section > div:nth-child(2) > div:nth-child(5) > h2:nth-child(2)
+{
+    position: absolute;
+    font-size: 16px;
+    margin-top: 425px;
+    margin-left: 1325px;
+    color: rgb(23, 180, 241);
+
+}
+
+#indrecovered
+{
+    position: absolute;
+    margin-top: 335px;
+    margin-left: 1240px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1px;
+    color: rgb(23, 180, 241);
+}
+
+
+body > section > div:nth-child(2) > div:nth-child(5) > i
+{
+    position: absolute;
+    margin-top: 485px;
+    margin-left: 1327px;
+    font-size: 14px;
+    color: rgb(30, 180, 218);
+}
+
+
+#indtdyrecovered
+{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 1345px;
+    font-size: 17px;
+    color: rgb(30, 180, 218);
+}
+
+
+
+
+/* YOUR STATE */
+
+
+body > section > div:nth-child(3) > div > img
+{
+    width: 197px;
+    height: 150px;
+    margin-top: 570px;
+    margin-left: 725px;
+    position: absolute;
+}
+
+body > section > div:nth-child(3) > h3
+{
+    position: absolute;
+    font-size: 22px;
+    margin-top: 560px;
+    margin-left: 755px;
+    color: #95989A;
+}
+
+
+
+
+
+/*///////////////////////////////////*/
+
+
+#sec2 > div > div:nth-child(1) > div > h3
+{
+    background: whitesmoke;
+    width: 630px;
+    margin-left: 50px;
+    margin-top: 0px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+/* table heading*/
+
+
+#sec2 > div > img
+{
+    margin-left: 65px;
+    width: 200px;
+    height: 50px;
+}
+
+#kar
+{
+    position: absolute;
+    margin-left: 70px;
+}
+
+/* table*/
+
+#tble
+{
+   margin-left: 350px;
+}
+
+.box
+{
+    min-height: 650px;
+    
+     margin-top: 20px;
+     padding-left: 20px;
+}
+
+#tablescroll
+{
+    width: 630px;
+    margin-left: 50px;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+#tablescroll thead th{
+    background-color: aqua;
+    position: sticky;top: 0;
+}
+
+#sec2 > div > div:nth-child(2) > div > h3
+{
+    width: 50vh;
+}
+

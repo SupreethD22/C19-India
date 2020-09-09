@@ -1,0 +1,131 @@
+body
+{
+    background-color: #2A2A2A;
+    height: 90vh;
+}
+
+
+
+.navcolor
+{
+    background-color: #3F3F3F;
+}
+
+.nav-item
+{
+    font-size: 20px;
+    margin: 6px;
+}
+
+h1
+{
+    color: cornsilk;
+    margin-left: 15px;
+}
+#active
+{
+    color: cornsilk;
+    font-size: 20px;
+    padding-top: 50px;
+}
+#totalactive
+{
+    color: cornsilk;
+    font-size: 40px;
+    font-weight: bold;
+}
+#tdyactive
+{
+    color: cornsilk;
+    font-weight: bold;
+}
+#worldconfirmed
+{
+    margin: 5px;
+    height: 130px;
+}
+
+#stateinfo
+{
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 60px;
+    width: 500px;
+    background-color: rgba(137, 43, 226, 0.459);
+}
+
+
+#aractive,#arconf,#arrec,#ardeaths,#tnactive,#tnconf,#tnrec,#tndeaths,#apactive,#apconf,#aprec,#apdeaths,#mhactive,#mhconf,#mhrec,#mhdeaths
+{
+    color: cornsilk;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.act
+{
+    color: cornsilk;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+#arconfrm,#arrecv,#ard
+{
+  font-weight: bold;
+}
+
+
+.col
+{
+    align-items: stretch;
+}
+
+ #tablescroll
+{
+    height: 640px;
+    width: 515px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#tablescroll thead th
+{
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+
+#tablescroll > table > tbody > tr:hover
+{
+     background-color: cadetblue;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .dropdown-menu
+  {
+      height: 300px;
+      overflow-y: scroll;
+  }

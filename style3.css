@@ -1,0 +1,695 @@
+#body
+{
+    background-color: #2A2A2A;
+    overflow-x: hidden;
+    
+}
+
+
+
+.box
+{
+    min-height: 650px;
+     margin-top: 20px;
+}
+
+
+/* navbar */
+
+/* navbar color */
+body > nav
+{
+    background: #3F3F3F;
+    
+}
+
+
+#logo
+{
+    width: 110px;
+    height: 50px;
+}
+
+/* info  */
+
+body > section > div > div.col-lg-6 > div > h1
+{
+    margin-top: 70px;
+    padding: 10px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #65AAD9;
+}
+
+body > section > div > div.col-lg-6 > div > p:nth-child(2)
+{
+    padding: 10px;
+    font-size: 27px;
+    color: #95989A;
+}
+
+body > section > div > div.col-lg-6 > div > p:nth-child(3)
+{
+    padding: 10px;
+    font-size: 27px;
+    color: #95989A;
+}
+
+
+/*///////////////////////////////    dashboard     ///////////////////////////////////////////////////// */
+
+/* dashboard img*/
+.dashboard
+{
+    width: 715px;
+    height: 600px;
+    background-color: #4D4D4D;
+    margin-top: 95px;
+    margin-left: 15px;
+    padding: 10px;
+
+}
+
+#worldconfirmed
+{
+    background-color: #5a5a5a;
+    border-radius: 5px;
+    margin: 5px;
+    height: 105px;
+    text-align: center;
+    box-shadow: 0px 10px 25px -4px;
+}
+
+#worldconfirmed #conf,#confirmed,#tdyconfirmed,i,#indconfirmed,#stateconfirmed
+{
+    color: rgba(246, 71, 71, 1);
+}
+
+
+#worldconfirmed #tdyconfirmed,#indtdyconfirmed,#statetdyconformed
+{
+    font-weight: 500;
+    color: rgba(246, 71, 71, 1);
+}
+
+#worldconfirmed #tdyconfirmed,#indtdyconfirmed,#statetdyconformed
+{
+    font-weight: 500;
+    color: rgba(246, 71, 71, 1);
+}
+
+/*active*/
+
+#worldconfirmed #active,#worldactive,#indactive,#stateactive,#tdyactive,#indtdyactive,#statetdyactive
+{
+    color:	#32CD32
+}
+
+
+#worldconfirmed #rec,#recovered,#tdyrecovered,#indtdyrecovered,#indrecovered,#staterecovered,#statetdyrecovered
+{
+    color:	#FA9F42;
+}
+
+
+
+#worldconfirmed #tdyconfirmed,#indtdyconfirmed,#statetdyconformed
+{
+    font-weight: 500;
+    color: rgba(246, 71, 71, 1)
+}
+
+
+
+
+#worldconfirmed #conf
+{
+    font-weight: 500;
+}
+
+#worldconfirmed #confirmed,#recovered,#worldactive,#deaths,#indconfirmed,#indactive,#indrecovered,#inddeaths,#stateconfirmed,#stateactive,#staterecovered,#statedeaths
+{
+    font-size: 29px;
+    font-weight: bolder;
+}
+
+
+
+#dashboard > div > div > div:nth-child(n) > div:nth-child(1):hover
+{
+    transition: 1s;
+    background: rgba(226, 106, 106, 0.9);
+    color: rgb(61, 61, 61);
+}
+
+#confirmed > a:hover
+{
+    color: rgb(39, 38, 38);
+}
+
+
+#body > section > div > div.row > div > div > div > div > h3:nth-child(1)
+{
+    text-align: center;
+}
+
+
+#body > section > div > div.row > div > div > div > div > h3:nth-child(2)
+{
+    margin-left: 0px;
+}
+
+#heading
+{
+    color: #65AAD9;
+    font-size: 35px;
+    text-align: center;
+}
+
+#world
+{
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+#states
+{
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#india
+{
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+  #myInput
+  {
+      background-color: darkgray;
+      border: none;
+    
+      margin-top: 5px;
+  }
+
+/*///////////////////////////////    dashboard     ///////////////////////////////////////////////////// */
+
+#body > div > div:nth-child(1) > div > h3
+{
+    background-color: #3F3F3F;
+    color: azure;
+    left: 10px;
+}
+
+#tablescroll
+{
+    height: 1110px;
+    overflow-y: scroll;
+    margin-top: 15px;
+    /* overflow-x: scroll; */
+}
+
+#tablescroll thead th
+{
+    position: sticky;
+    top: 0;
+    background-color: black;
+
+}
+
+
+
+
+#tablescroll > table > tbody > tr:hover
+{
+    background-color: cadetblue;
+}
+
+
+tbody tr
+{
+    background: rgba(46, 49, 49, 1);
+    border: 2px solid rgb(109, 109, 109);
+}
+
+
+#body > div:nth-child(3) > div:nth-child(2) > div > h3
+{
+    margin-top: 10px;
+    color: #65AAD9;
+}
+
+/* GRAPH */
+
+#indconfrm
+{
+    background: #ffa6a6e5;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#indrecv
+{
+    background: rgba(175, 255, 168, 0.884);
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#inddeceased
+{
+    background: rgba(189, 195, 199, 1);
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+/*symptoms*/
+
+#symp
+{
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 25px;
+    background: rgba(108, 122, 137, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#symp p
+{
+    font-size: 18px;
+    font-weight: 520;
+}
+
+
+
+
+#sympimg
+{
+margin: 10px;    
+padding: 10px;
+border: 2px solid rgba(149, 165, 166, 1);
+background: rgba(149, 165, 166, 1);
+box-shadow: 0px 0px 15px -2px;
+}
+
+
+#sympimg2
+{
+margin: 10px;    
+padding: 10px;
+height: 350px;
+border: 2px solid rgba(149, 165, 166, 1);
+background: rgba(149, 165, 166, 1);
+box-shadow: 0px 0px 15px -2px;
+}
+
+
+
+
+#symp > div:nth-child(1) > img
+{
+    margin-left: 50px;
+}
+
+#sympimg a
+{
+    padding: 15px;
+    margin-top: 8px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+#body > hr
+{
+    border: 1px solid rgb(59, 59, 59);
+}
+
+
+#mesr
+{
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 25px;
+    background: rgba(189, 195, 199, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: auto;
+}
+
+
+#mesr p
+{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*Footer*/
+
+
+footer
+{
+    margin-top: 20px;
+    background: #3F3F3F;
+    padding: 15px;
+}
+
+
+footer #head
+{
+    font-size: 22px;
+    font-weight: 750;
+    color: #65AAD9;
+}
+
+#body > footer > div > div:nth-child(3) > a:nth-child(3) > img
+{
+    width: 80px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 570px) {
+    .dashboard
+    {
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+        background-color: #4D4D4D;
+        margin-top: 0px;
+        right: 5px;
+    }
+
+
+   
+
+    #worldconfirmed
+    {
+        background-color: #5a5a5a;
+        height: 80px;
+    }
+
+    #worldconfirmed #conf,#confirmed,#tdyconformed,i
+    {
+        color: crimson;
+    }
+
+    #worldconfirmed #conf,#active,#rec,#death,#worldactive,#deaths
+    {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    #worldconfirmed #confirmed,#recovered,#deaths,#indconfirmed,#indactive,#indrecovered,#inddeaths,#stateconfirmed,#stateactive,#staterecovered,#statedeaths
+    {
+        font-size: 16px;
+        font-weight: 750;
+    }
+
+    #worldconfirmed #tdyconfirmed
+    {
+        font-weight: 300;
+        left: 5px;
+    }
+
+    
+
+    #symp > div:nth-child(1) > img
+    {
+        width: 400px;
+        height: 450px;
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+    #mesr
+    {
+        width: 570px;
+    }
+
+    
+
+    #sympimg2
+    {
+        height: auto;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .dashboard
+    {
+        width: 600px;
+        height: 500px;
+        overflow: hidden;
+        background-color: #4D4D4D;
+        margin-top: 0px;
+        right: 5px;
+    }
+
+
+   
+
+    #worldconfirmed
+    {
+        background-color: #5a5a5a;
+        height: 80px;
+    }
+
+    #worldconfirmed #conf,#confirmed,#tdyconformed,i
+    {
+        color: crimson;
+    }
+
+    #worldconfirmed #conf,#active,#rec,#death,#worldactive,#deaths
+    {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    #worldconfirmed #confirmed,#recovered,#deaths,#indconfirmed,#indactive,#indrecovered,#inddeaths,#stateconfirmed,#stateactive,#staterecovered,#statedeaths
+    {
+        font-size: 16px;
+        font-weight: 750;
+    }
+
+    #worldconfirmed #tdyconfirmed
+    {
+        font-weight: 300;
+        left: 5px;
+    }
+
+    
+
+    #symp > div:nth-child(1) > img
+    {
+        width: 400px;
+        height: 450px;
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+    #mesr
+    {
+        width: 570px;
+    }
+
+    
+
+    #sympimg2
+    {
+        height: auto;
+    }
+
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .dashboard
+    {
+        width: 485px;
+        height: 500px;
+        overflow: hidden;
+        background-color: #4D4D4D;
+        margin-top: 0px;
+        right: 5px;
+    }
+
+
+   
+
+    #worldconfirmed
+    {
+        background-color: #5a5a5a;
+        height: 80px;
+    }
+
+    #worldconfirmed #conf,#confirmed,#tdyconformed,i
+    {
+        color: crimson;
+    }
+
+    #worldconfirmed #conf,#active,#rec,#death,#worldactive,#deaths
+    {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    #worldconfirmed #confirmed,#recovered,#deaths,#indconfirmed,#indactive,#indrecovered,#inddeaths,#stateconfirmed,#stateactive,#staterecovered,#statedeaths
+    {
+        font-size: 16px;
+        font-weight: 750;
+    }
+
+    #worldconfirmed #tdyconfirmed
+    {
+        font-weight: 300;
+        left: 5px;
+    }
+
+    
+
+    #symp > div:nth-child(1) > img
+    {
+        width: 400px;
+        height: 450px;
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+    #mesr
+    {
+        width: auto;
+    }
+
+    
+
+    #sympimg2
+    {
+        height: auto;
+    }
+
+    
+}
+
+
+/* @media only screen and (max-width: 700px) {
+    .dashboard
+    {
+        width: 700px;
+        height: 550px;
+        overflow: hidden;
+        background-color: #4D4D4D;
+        margin-top: 0px;
+        right: 5px;
+    }
+
+    #dashboard
+    {
+        width: 700px;
+        height: 550px;
+    }
+
+    #worldconfirmed
+    {
+        background-color: #5a5a5a;
+        height: 80px;
+    }
+
+    #worldconfirmed #conf,#confirmed,#tdyconformed,i
+    {
+        color: crimson;
+    }
+
+    #worldconfirmed #conf,#active,#rec,#death,#worldactive,#deaths
+    {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    #worldconfirmed #confirmed,#recovered,#deaths,#indconfirmed,#indactive,#indrecovered,#inddeaths,#stateconfirmed,#stateactive,#staterecovered,#statedeaths
+    {
+        font-size: 16px;
+        font-weight: 750;
+    }
+
+    #worldconfirmed #tdyconfirmed
+    {
+        font-weight: 300;
+        left: 5px;
+    }
+
+   
+
+    #symp > div:nth-child(1) > img
+    {
+        width: 400px;
+        height: 450px;
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+    #mesr
+    {
+        width: auto;
+    }
+
+    #sympimg2
+    {
+        height: auto;
+    }
+
+    
+} */

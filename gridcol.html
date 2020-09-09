@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body id="body">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark navcolor" id="navbr">
+        <!-- branding -->
+        <div class="container">
+            <a href="#" class="navbar-brand logo">navbar</a>
+           
+            <!-- collapse-btn -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#collapsibleNavbar'>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- navbar-links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+                <ul class="navbar-nav ml-auto link">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="container">
+                <h1>What is <br> Corona Virus ??</h1>
+                <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+                </p>
+                <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-6">
+              <div class="container">
+              <div class="dashboard" id="dashboard">
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                      <h3 id="heading">COVID-19 CASES</h3>
+                      <h3 id="world">WORLD</h3>
+                        <div class="row">
+                            <div class="col" id="worldconfirmed" >
+                                <a id="conf">confirmed</a><br>
+                                <a id="confirmed"></a><br>
+                                <i class="fa fa-arrow-up" aria-hidden="true"></i><a id="tdyconfirmed"></a>
+                            </div>
+                            <div class="col" id="worldconfirmed" >
+                                <a id="active">Active</a><br>
+                                <a id="worldactive"></a><br>
+                                <a id="tdyactive"></a>
+                            </div>
+                            <div class="col" id="worldconfirmed" >
+                                <a id="rec">Recovered</a><br>
+                                <a id="recovered"></a><br>
+                                <i class="fa fa-arrow-up" aria-hidden="true" style="color:#FA9F42;"></i> <a id="tdyrecovered"> </a>
+                            </div>
+                            <div class="col" id="worldconfirmed" >
+                                <a id="death">Deaths</a><br>
+                                <a id="deaths"></a><br>
+                                <i class="fa fa-arrow-up" aria-hidden="true" style="color: rgb(31, 31, 31);"></i><a id="tdydeaths"></a>
+                            </div>
+                        </div>
+                        
+                        <h3 id="india">INDIA</h3>
+
+                        <div class="row">
+                          <div class="col" id="worldconfirmed" >
+                              <a id="conf">confirmed</a><br>
+                              <a id="indconfirmed"></a><br>
+                              <i class="fa fa-arrow-up" aria-hidden="true"></i><a id="indtdyconfirmed"></a>
+                          </div>
+                          <div class="col" id="worldconfirmed" >
+                              <a id="active">Active</a><br>
+                              <a id="indactive"></a><br>
+                              <a id="indtdyactive"></a>
+                          </div>
+                          <div class="col" id="worldconfirmed" >
+                              <a id="rec">Recovered</a><br>
+                              <a id="indrecovered"></a><br>
+                              <i class="fa fa-arrow-up" aria-hidden="true" style="color: #FA9F42;"></i><a id="indtdyrecovered"></a>
+                          </div>
+                          <div class="col" id="worldconfirmed" >
+                              <a id="death">Deaths</a><br>
+                              <a id="inddeaths"></a><br>
+                              <i class="fa fa-arrow-up" aria-hidden="true" style="color: rgb(31, 31, 31);"></i><a id="indtdydeaths"></a>
+                          </div>
+                        </div>
+
+                        <h3 id="states"></h3>
+
+                        <div class="row">
+                          <div class="col" id="worldconfirmed" >
+                              <a id="conf">confirmed</a><br>
+                              <a id="stateconfirmed"></a><br>
+                              <i class="fa fa-arrow-up" aria-hidden="true"></i><a id="statetdyconformed"></a>
+                          </div>
+                          <div class="col" id="worldconfirmed" >
+                              <a id="active">Active</a><br>
+                              <a id="stateactive"></a><br>
+                              <a id="statetdyactive"></a>
+                          </div>
+                          <div class="col" id="worldconfirmed" >
+                              <a id="rec">Recovered</a><br>
+                              <a id="staterecovered"></a><br>
+                              <i class="fa fa-arrow-up" aria-hidden="true" style="color: #FA9F42;"></i><a id="statetdyrecovered"></a>
+                          </div>
+                          <div class="col" id="worldconfirmed" >
+                              <a id="death">Deaths</a><br>
+                              <a id="statedeaths"></a><br>
+                              <i class="fa fa-arrow-up" aria-hidden="true" style="color: rgb(31, 31, 31);"></i><a id="statetdydeaths"></a>
+                          </div>
+                        </div>
+
+                    </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="container">
+            
+            <div class="input-group" >
+              <!-- <h3>STATE WISE</h3> -->
+
+              <input class="form-control" type="text" placeholder="Search State" aria-label="Search" id="myInput">
+              <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                      <i class="fa fa-search"></i>
+                  </button>
+              </div>
+          </div>
+            <div  id="tablescroll">
+                <table class="table table-bordered table-dark">
+               <thead>
+                
+                   <th scope="col">State</th>
+                   <th scope="col">Confirmed</th>
+                   <th scope="col">Active</th>
+                   <th scope="col">Recovered</th>
+                   <th scope="col">Deseased</th>
+                 
+               </thead>
+               <tbody id="records_table"> 
+
+                <!-- mh -->
+   
+                 <tr data-url="statesdistrict/Maharashtra.html">
+                   <td><a id="mh"></a></td>
+                   <td>
+                     <a id="mhconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                     <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="mhconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                    </td>
+                   <td> <a id="mhactive" style="color: rgb(243, 213, 42);"></a></td>
+                   <td>
+                     <a id="mhrec" style="color: #50da43;"></a><br>
+                     <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="mhrecv" style="font-size: 13px;color: #50da43;"></a>
+                    </td>
+                   <td>
+                     <a id="mhdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                     <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="mhd" style="font-size: 13px;color: rgb(164, 164, 164);"></a>
+                    </td>
+   
+                 </tr>
+
+
+                 <!-- tn -->
+
+                 <tr data-url="statesdistrict/TamilNadu.html">
+                  <td><a id="tn"></a></td>
+                  <td>
+                    <a id="tnconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="tnconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="tnactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="tnrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="tnrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="tndeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="tnd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+                <!-- ap -->
+
+
+                <tr data-url="statesdistrict/AndhraPradesh.html">
+                  <td><a id="ap"></a></td>
+                  <td>
+                    <a id="apconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="apconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="apactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="aprec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="aprecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="apdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="apd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+                <!-- ka -->
+
+
+
+                <tr data-url="">
+                  <td><a id="ka"></a></td>
+                  <td>
+                    <a id="kaconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="kaconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="kaactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="karec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="karecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="kadeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="kad" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+                <!-- dl -->
+
+                <tr data-url="">
+                  <td><a id="dl"></a></td>
+                  <td>
+                    <a id="dlconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="dlconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="dlactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="dlrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="dlrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="dldeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="dld" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+
+                <!-- up -->
+
+                <tr data-url="">
+                  <td><a id="up"></a></td>
+                  <td>
+                    <a id="upconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="upconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="upactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="uprec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="uprecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="updeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="upd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+               
+
+               
+
+                
+                <!-- wb -->
+
+
+                <tr data-url="">
+                  <td><a id="wb"></a></td>
+                  <td>
+                    <a id="wbconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="wbconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="wbactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="wbrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="wbrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="wbdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="wbd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+                <!-- br -->
+
+
+                <tr data-url="statesdistrict/Bihar.html">
+                  <td><a id="br"></a></td>
+                  <td>
+                    <a id="brconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="brconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="bractive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="brrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="brrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="brdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="brd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+             
+
+                <!-- tg -->
+
+
+                <tr data-url="">
+                  <td><a id="tg"></a></td>
+                  <td>
+                    <a id="tgconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="tgconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="tgactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="tgrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="tgrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="tgdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="tgd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+               
+
+                <!-- GJ -->
+
+                
+                <tr data-url="">
+                  <td><a id="gj"></a></td>
+                  <td>
+                    <a id="gjconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="gjconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="gjactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="gjrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="gjrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="gjdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="gjd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+                
+              
+
+                <!-- AS -->
+
+                <tr data-url="\statesdistrict\Assam.html">
+                  <td><a id="as"></a></td>
+                  <td>
+                    <a id="asconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="asconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="asactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="asrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="asrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="asdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="asd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+                
+
+                <!-- RJ -->
+
+                <tr data-url="">
+                  <td><a id="rj"></a></td>
+                  <td>
+                    <a id="rjconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="rjconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="rjactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="rjrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="rjrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="rjdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="rjd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+               
+
+                <!-- OR -->
+
+                <tr data-url="">
+                  <td><a id="or"></a></td>
+                  <td>
+                    <a id="orconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="orconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="oractive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="orrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="orrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="ordeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="ord" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+                
+
+                <!-- HR -->
+
+                <tr data-url="">
+                  <td><a id="hr"></a></td>
+                  <td>
+                    <a id="hrconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="hrconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="hractive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="hrrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="hrrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="hrdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="hrd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+                <!-- MP -->
+
+
+                <tr data-url="">
+                  <td><a id="mp"></a></td>
+                  <td>
+                    <a id="mpconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="mpconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="mpactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="mprec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="mprecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="mpdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="mpd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+
+                <!-- KL -->
+
+
+                <tr data-url="">
+                  <td><a id="kl"></a></td>
+                  <td>
+                    <a id="klconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="klconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="klactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="klrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="klrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="kldeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="kld" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+               
+
+                <!-- PB -->
+
+                <tr data-url="">
+                  <td><a id="pb"></a></td>
+                  <td>
+                    <a id="pbconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="pbconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="pbactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="pbrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="pbrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="pbdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="pbd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+               
+
+                <!-- JK -->
+
+
+                <tr data-url="">
+                  <td><a id="jk"></a></td>
+                  <td>
+                    <a id="jkconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="jkconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="jkactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="jkrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="jkrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="jkdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="jkd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+               
+
+
+                <!-- JH -->
+
+
+                <tr data-url="">
+                  <td><a id="jh"></a></td>
+                  <td>
+                    <a id="jhconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="jhconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="jhactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="jhrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="jhrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="jhdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="jhd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+              
+
+
+                <!-- CT -->
+
+
+                <tr data-url="">
+                  <td><a id="ct"></a></td>
+                  <td>
+                    <a id="ctconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="ctconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="ctactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="ctrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="ctrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="ctdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="ctd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+
+                 <!-- UT -->
+
+
+                 <tr data-url="">
+                  <td><a id="ut"></a></td>
+                  <td>
+                    <a id="utconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="utconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="utactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="utrec" style="color: #50da43;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"><a id="utrecv" style="font-size: 13px;"></a>
+                   </td>
+                  <td>
+                    <a id="utdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="utd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+               
+
+                 <!-- GA -->
+
+
+                 <tr data-url="">
+                  <td><a id="ga"></a></td>
+                  <td>
+                    <a id="gaconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="gaconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="gaactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="garec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="garecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="gadeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="gad" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+                
+
+
+                <!-- TR -->
+
+
+                <tr data-url="">
+                  <td><a id="tr"></a></td>
+                  <td>
+                    <a id="trconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="trconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="tractive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="trrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="trrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="trdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="trd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+              
+
+
+                <!-- PY -->
+
+
+                <tr data-url="">
+                  <td><a id="py"></a></td>
+                  <td>
+                    <a id="pyconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="pyconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="pyactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="pyrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="pyrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="pydeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="pyd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+               
+              
+
+                <!-- MN -->
+
+
+                <tr data-url="">
+                  <td><a id="mn"></a></td>
+                  <td>
+                    <a id="mnconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="mnconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="mnactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="mnrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="mnrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="mndeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="mnd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+              
+
+                <!-- HP -->
+
+
+                <tr data-url="">
+                  <td><a id="hp"></a></td>
+                  <td>
+                    <a id="hpconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="hpconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="hpactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="hprec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="hprecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="hpdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="hpd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+              
+
+
+                <!-- NL -->
+
+
+                <tr data-url="">
+                  <td><a id="nl"></a></td>
+                  <td>
+                    <a id="nlconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="nlconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="nlactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="nlrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="nlrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="nldeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="nld" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+
+               
+
+
+                <!-- AR -->
+
+
+                <tr data-url="\statesdistrict\ArunachalPradesh.html">
+                  <td><a id="ar"></a></td>
+                  <td>
+                    <a id="arconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="arconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="aractive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="arrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="arrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="ardeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="ard" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+               
+
+
+                <!-- AN -->
+
+
+                <tr data-url="\statesdistrict\AndamanAndNicobarIslands.html">
+                  <td><a id="an"></a></td>
+                  <td>
+                    <a id="anconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="anconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="anactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="anrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="anrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="andeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="and" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+               
+
+
+                <!-- LA -->
+
+
+                <tr data-url="">
+                  <td><a id="la"></a></td>
+                  <td>
+                    <a id="laconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="laconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="laactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="larec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="larecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="ladeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="lad" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+             
+
+
+                <!-- CH -->
+
+
+                <tr data-url="">
+                  <td><a id="ch"></a></td>
+                  <td>
+                    <a id="chconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="chconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="chactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="chrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="chrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="chdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="chd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+               
+
+
+                <!-- DH -->
+
+
+                <tr data-url="">
+                  <td><a id="dh"></a></td>
+                  <td>
+                    <a id="dhconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="dhconfrm" style="font-size: 13px;color: rgb(255, 61, 61);">0</a>
+                   </td>
+                  <td> <a id="dhactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="dhrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="dhrecv" style="font-size: 13px;color: #50da43;">0</a>
+                   </td>
+                  <td>
+                    <a id="dhdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="dhd" style="font-size: 13px;color: rgb(168, 168, 168);">0</a>
+                   </td>
+  
+                </tr>
+
+
+
+
+                <!-- ML -->
+
+
+                <tr data-url="">
+                  <td><a id="ml"></a></td>
+                  <td>
+                    <a id="mlconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="mlconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="mlactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="mlrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="mlrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="mldeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="mld" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+                
+
+
+            
+                <!-- SK -->
+
+
+                <tr data-url="">
+                  <td><a id="sk"></a></td>
+                  <td>
+                    <a id="skconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="skconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="skactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="skrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="skrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="skdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="skd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+              
+                <!-- MZ -->
+
+
+                <tr data-url="">
+                  <td><a id="mz"></a></td>
+                  <td>
+                    <a id="mzconf" style="color: rgb(255, 61, 61); font-size: 17px;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(255, 61, 61);"></i><a id="mzconfrm" style="font-size: 13px;color: rgb(255, 61, 61);"></a>
+                   </td>
+                  <td> <a id="mzactive" style="color: rgb(243, 213, 42);"></a></td>
+                  <td>
+                    <a id="mzrec" style="color: #50da43;;"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: #50da43;"></i><a id="mzrecv" style="font-size: 13px;color: #50da43;"></a>
+                   </td>
+                  <td>
+                    <a id="mzdeaths" style="color: rgb(168, 168, 168);"></a><br>
+                    <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 10px;color: rgb(168, 168, 168);"></i><a id="mzd" style="font-size: 13px;color: rgb(168, 168, 168);"></a>
+                   </td>
+  
+                </tr>
+
+
+
+
+
+
+
+
+                  
+             
+                 
+               </tbody>
+             </table>
+           </div>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="container">
+            <h3>COVID-19 STATS</h3>
+            <canvas id="indconfrm" class="conf"></canvas><br>
+            <canvas id="indrecv"></canvas><br>
+            <canvas id="inddeceased"></canvas>
+       
+          </div>
+               
+        </div>
+
+
+
+        
+
+    </div>
+
+    <hr>
+
+  <div class="row" id="symp">
+    
+        <div class="col" >
+          <h2>COVID-19 Symptoms</h2>
+          <div id="sympimg">
+          <p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.
+            ...
+           </p>
+          <p>Most people (about 80%) recover from the disease without needing hospital treatment. 
+            Around 1 out of every 5 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. 
+            Older people, and those with underlying medical problems like high blood pressure, heart and lung problems, 
+            diabetes, or cancer, are at higher risk of developing serious illness. </p>
+            <p><b> Less common symptoms:</b></p>
+          <a><img src="/images/iconfinder_07-Fever_5929237.png" alt="https://www.flaticon.com/free-icon/social-distancing_3107654?term=covid%2019&page=1&position=48" style="width: 80px;height: 90px;"></a><a>Fever</a><br>
+          <a><img src="/images/iconfinder_22-Cough_5929222.png" alt="" style="width: 70px;height: 70px;"></a><a> Cough</a><br>
+          <a><img src="/images/iconfinder_headache-migraine-severe-head-pain-shock_5728192.png" alt="" style="width: 70px;height: 70px;"></a><a> Headache/Migrane</a><br>
+          <a><img src="/images/iconfinder_11-Sore_throat_5929234.png" alt="" style="width: 70px;height: 70px;"></a><a> Sore Throat</a>
+        </div>
+      </div><br>
+
+        <div class="col" >
+        
+          <h3>COVID-19 transmission and protective measures</h3>
+          <div id="sympimg2">
+          <p>COVID-19 spreads primarily from person to person. Fighting this disease is our joint responsibility.
+    
+            Protect yourself and others by making these 6 simple precautions your new habits:</p>
+          <p>
+            <ul>
+              <li><b>Clean your hands often</b></li>
+              <li><b>Cough or sneeze in your bent elbow - not your hands!</b></li>
+              <li><b>Avoid touching your eyes, nose and mouth</b></li>
+              <li><b>Limit social gatherings and time spent in crowded places</b></li>
+              <li><b>Avoid close contact with someone who is sick</b></li>
+              <li><b>Clean and disinfect frequently touched objects and surfaces</b></li>
+            </ul>
+          </p>
+          
+
+        </div>
+      </div>
+  </div>
+
+  <div class="row" id="mesr">
+    <div class="col">
+     
+    </div>
+  
+    
+  </div>
+
+
+
+
+   <!-- footer -->
+
+    <footer>
+      <div class="row">
+        <div class="col-md-3">
+          <a id="head">Designed And Developed By</a><br>
+          <a>Supreeth D</a>
+        </div>
+        <div class="col-md-3">
+          <a id="head">Api From</a><br>
+          <a>COVID-19 INDIA ORG</a>
+        </div>
+        <div class="col-md-3">
+          <a id="head">Contact</a><br>
+          <a><img src="/images/github.png" alt="github"></a>
+        </div>
+
+       
+      </div>
+    </footer>
+
+
+
+
+
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery/jquery-3.5.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+    <!-- <script src="statewiseloc.js"></script>  -->
+    <script src="data.js"></script>
+    <script src="data2.js"></script>
+    <script src="data3.js"></script>
+    <script src="random.js"></script>
+  
+
+    <script>
+      $(function () {
+        $('table.table tr').click(function () {
+        window.location.href = $(this).data('url');
+      });
+      })
+    </script>
+
+    <script>
+      var toggled = false;
+      var element = document.getElementById("dashboard");
+      var bdy = document.getElementById("body");
+      function myfun()
+      {
+       if(!toggled)
+       {
+         toggled = true;
+         element.classList.add('light');
+         bdy.classList.add('body');
+         console.log('on');
+         return;
+       }
+       if(toggled)
+       {
+         toggled = false;
+         element.classList.remove('light');
+         bdy.classList.remove('body');
+         console.log('off');        
+          return;
+       }
+      }
+    </script>
+
+</body>
+</html>
